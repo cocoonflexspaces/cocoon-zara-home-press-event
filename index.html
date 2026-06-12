@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cocoon × Zara Home — Venue Options · Fall 2026</title>
+<meta name="description" content="Venue options from Cocoon Flex Spaces for the Zara Home fall collection press &amp; influencer event, Summer–Fall 2026." />
+<style>
+  /* ============================================================
+     COCOON BRAND TOKENS
+     Primary: #F54029 (Brilliance / terracotta) + #F5F2E8 (Natural / cream)
+     Accent:  #275453 (Clarity / deep teal), #000000 (Black)
+     Type:    Helvetica Neue — Bold for titles, Medium for headlines, Regular for body
+     ============================================================ */
+
+  :root {
+    --cream:       #F5F2E8;
+    --cream-deep:  #ECE7D6;
+    --cream-warm:  #EFE9D7;
+    --terracotta:  #F54029;
+    --terracotta-soft: #E8593F;
+    --terracotta-deep: #C8331E;
+    --teal:        #275453;
+    --teal-soft:   #355F5E;
+    --ink:         #1A1A1A;
+    --ink-soft:    #4A4A4A;
+    --ink-mute:    #6B6B6B;
+    --rule:        rgba(26,26,26,0.12);
+    --rule-soft:   rgba(26,26,26,0.06);
+    --max:         1280px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: var(--terracotta); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* TYPE SCALE */
+  .superhead {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 11px;
+    color: var(--terracotta);
+  }
+  .title {
+    font-weight: 700;
+    font-size: clamp(40px, 7vw, 96px);
+    line-height: 1.0;
+    letter-spacing: -0.025em;
+    margin: 0;
+  }
+  .headline {
+    font-weight: 500;
+    font-size: clamp(24px, 3.2vw, 40px);
+    line-height: 1.2;
+    letter-spacing: -0.012em;
+    margin: 0 0 0.6em;
+  }
+  .lede {
+    font-weight: 400;
+    font-size: clamp(18px, 1.5vw, 22px);
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin: 0 0 1em;
+  }
+  .body { font-size: 17px; line-height: 1.6; }
+  .caption {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+  }
+  .eyebrow {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--terracotta);
+    margin-bottom: 12px;
+  }
+
+  /* SECTION FRAME */
+  section {
+    padding: clamp(64px, 10vh, 140px) clamp(24px, 5vw, 80px);
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+  section + section { border-top: 1px solid var(--rule); }
+  section.tight { padding-top: clamp(48px, 6vh, 80px); padding-bottom: clamp(48px, 6vh, 80px); }
+  section.full {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section.full > .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 80px);
+  }
+
+  .logomark { width: 28px; height: 28px; flex: 0 0 auto; }
+  .wordmark { height: 16px; width: auto; flex: 0 0 auto; }
+
+  /* TOP BAR */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(245, 242, 232, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .topbar-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 14px clamp(24px, 5vw, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .topbar-brand { display: flex; align-items: center; gap: 18px; font-size: 13px; }
+  .topbar-brand .cocoon { display: flex; align-items: center; gap: 10px; padding-right: 18px; }
+  .topbar-brand .divider { width: 1px; height: 22px; background: var(--rule); flex: 0 0 auto; }
+  .topbar-brand .partner {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink);
+  }
+  .topbar-meta {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+  @media (max-width: 700px) { .topbar-meta { display: none; } }
+
+  /* COVER */
+  .cover {
+    position: relative;
+    background: var(--cream);
+    padding: 0;
+    max-width: none;
+    overflow: hidden;
+    border-bottom: 1px solid var(--rule);
+  }
+  .cover-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    min-height: 640px;
+  }
+  .cover-text {
+    padding: clamp(40px, 6vw, 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    background: var(--cream);
+  }
+  .cover-image {
+    position: relative;
+    overflow: hidden;
+    background: var(--ink);
+  }
+  .cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cover-meta {
+    display: grid;
+    gap: 6px;
+    margin-top: 32px;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+  .cover-meta strong { color: var(--ink); font-weight: 600; }
+
+  /* TWO-COL */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: clamp(40px, 6vw, 96px);
+    align-items: start;
+  }
+  .two-col.media-first { grid-template-columns: 1.4fr 1fr; }
+  .two-col.balanced { grid-template-columns: 1fr 1fr; }
+
+  /* PHOTO CARDS */
+  .photo {
+    background: var(--cream-deep);
+    overflow: hidden;
+    position: relative;
+  }
+  .photo img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    transition: transform 600ms ease;
+  }
+  .photo.tall img { aspect-ratio: 3/4; }
+  .photo.square img { aspect-ratio: 1/1; }
+  .photo.wide img { aspect-ratio: 16/9; }
+
+  .photo.bleed {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+  .photo.bleed img {
+    aspect-ratio: 21/9;
+    max-height: 80vh;
+  }
+  @media (max-width: 900px) {
+    .photo.bleed img { aspect-ratio: 4/3; max-height: 60vh; }
+  }
+
+  .photo-grid { display: grid; gap: 18px; }
+  .photo-grid.two { grid-template-columns: 1fr 1fr; }
+  .photo-grid.three { grid-template-columns: repeat(3, 1fr); }
+  .photo-grid.four { grid-template-columns: repeat(4, 1fr); }
+
+  .photo-grid.editorial {
+    grid-template-columns: 1.6fr 1fr;
+    gap: 18px;
+  }
+  .photo-grid.editorial .photo { height: 100%; }
+  .photo-grid.editorial .photo img {
+    width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover;
+  }
+  .photo-grid.editorial .photo:first-child img { aspect-ratio: 4/5; }
+
+  .photo-grid.asymm {
+    grid-template-columns: 1.6fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 18px;
+  }
+  .photo-grid.asymm > :nth-child(1) { grid-row: 1 / 3; }
+  .photo-grid.asymm .photo { height: 100%; }
+  .photo-grid.asymm .photo img {
+    width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover;
+  }
+
+  /* QUAD MOSAIC — 1 featured + 3 stacked */
+  .photo-grid.quad {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 18px;
+  }
+  .photo-grid.quad > :nth-child(1) { grid-row: 1 / 4; }
+  .photo-grid.quad .photo { height: 100%; min-height: 0; }
+  .photo-grid.quad .photo img {
+    width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover;
+  }
+  @media (max-width: 900px) {
+    .photo-grid.quad { grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; }
+    .photo-grid.quad > :nth-child(1) { grid-row: 1; grid-column: 1 / 3; }
+    .photo-grid.quad .photo img { aspect-ratio: 3/2; }
+  }
+
+  /* PLACEHOLDER FRAMES */
+  .placeholder-frame {
+    background: var(--cream-deep);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px 20px;
+    min-height: 200px;
+    height: 100%;
+  }
+  .ph-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--terracotta);
+    margin-bottom: 8px;
+  }
+  .ph-text {
+    font-size: 12px;
+    color: var(--ink-mute);
+    line-height: 1.5;
+  }
+
+  /* OPTION HEADER — venue sections */
+  .option-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 28px;
+    align-items: end;
+    margin-bottom: 28px;
+  }
+  .option-num {
+    font-size: clamp(64px, 8vw, 110px);
+    font-weight: 700;
+    line-height: 0.8;
+    color: var(--terracotta);
+    letter-spacing: -0.04em;
+  }
+  .option-title {
+    font-size: clamp(28px, 3.4vw, 44px);
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+  .option-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  /* CALLOUT BAR */
+  .callout {
+    background: var(--terracotta);
+    color: #FFF;
+    padding: clamp(40px, 6vw, 80px);
+    margin: 0;
+    max-width: none;
+  }
+  .callout.teal { background: var(--teal); }
+  .callout.ink { background: var(--ink); }
+  .callout .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 80px);
+  }
+  .callout .title { color: #FFF; }
+  .callout .superhead { color: rgba(255,255,255,0.88); }
+  .callout .lede { color: rgba(255,255,255,0.92); }
+
+  /* DIVIDER LABEL */
+  .divider-label {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 24px;
+    align-items: center;
+    margin: 0 0 32px;
+  }
+  .divider-label .text {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--terracotta);
+  }
+  .divider-label .line {
+    height: 1px;
+    background: var(--rule);
+  }
+
+  /* NOTE BOX */
+  .note {
+    background: #FFF;
+    border-left: 3px solid var(--terracotta);
+    padding: 32px 36px;
+    margin: 32px 0;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .note p { margin: 0 0 14px; }
+  .note p:last-child { margin-bottom: 0; }
+  .note .signature {
+    margin-top: 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--terracotta);
+    font-weight: 700;
+  }
+
+  /* PILL CTA */
+  .cta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    background: var(--ink);
+    color: var(--cream);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background 200ms ease;
+    white-space: nowrap;
+  }
+  .cta-pill:hover { background: var(--terracotta); text-decoration: none; }
+  .cta-pill.terracotta { background: var(--terracotta); color: #FFF; }
+  .cta-pill.terracotta:hover { background: var(--ink); }
+
+  /* STAT GRID */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .stat .num {
+    font-size: clamp(36px, 4vw, 56px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--terracotta);
+  }
+  .stat .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  @media (max-width: 700px) { .stat-grid { grid-template-columns: 1fr 1fr; } }
+
+  /* WALK CARDS */
+  .walk {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .walk .step {
+    border-top: 2px solid var(--terracotta);
+    padding-top: 24px;
+  }
+  .walk .step-num {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--terracotta);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .walk .step h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+
+  /* AVAILABILITY TABLE */
+  .avail-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  .avail-table th, .avail-table td {
+    padding: 14px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--rule-soft);
+    vertical-align: middle;
+  }
+  .avail-table th {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: var(--cream-warm);
+    border-bottom: 1px solid var(--rule);
+  }
+  .avail-table th:first-child { border-radius: 0; }
+  .avail-table td.venue-col { font-weight: 600; font-size: 15px; color: var(--ink); min-width: 180px; }
+  .avail-table td.venue-col span {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-top: 2px;
+  }
+  .avail-table tr:last-child td { border-bottom: none; }
+  .avail-table tbody tr:hover td { background: rgba(245,242,232,0.6); }
+
+  .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    border-radius: 100px;
+  }
+  .badge.yes { background: rgba(39,84,83,0.12); color: var(--teal); }
+  .badge.partial { background: rgba(245,64,41,0.10); color: var(--terracotta-deep); }
+  .badge.no { background: rgba(26,26,26,0.06); color: var(--ink-mute); }
+  .badge.tbd { background: rgba(245,64,41,0.06); color: var(--ink-mute); border: 1px dashed var(--rule); }
+
+  /* FLOOR PLAN FRAME */
+  .floor-plan-frame {
+    background: #FFF;
+    border: 1px solid var(--rule);
+    padding: 24px;
+    margin-top: 24px;
+  }
+  .floor-plan-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .floor-plan-caption {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-mute);
+    margin-top: 12px;
+    font-weight: 600;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 60px clamp(24px, 5vw, 80px);
+    border-top: 1px solid var(--rule);
+    background: var(--cream);
+    color: var(--ink-soft);
+  }
+  footer .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  footer .sig { font-weight: 600; color: var(--ink); font-size: 14px; }
+  footer .meta { font-size: 12px; }
+
+  /* LIGHTBOX */
+  section[data-lightbox] .photo { cursor: zoom-in; }
+  section[data-lightbox] .photo img { transition: transform 500ms ease, filter 300ms ease; }
+  section[data-lightbox] .photo:hover img { transform: scale(1.03); filter: brightness(1.04); }
+  .lightbox {
+    position: fixed; inset: 0;
+    background: rgba(10, 10, 10, 0.94);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(20px, 5vw, 56px);
+    cursor: zoom-out;
+    opacity: 0;
+    transition: opacity 250ms ease;
+  }
+  .lightbox.open { display: flex; opacity: 1; }
+  .lightbox img {
+    max-width: 100%; max-height: 100%; width: auto; height: auto;
+    object-fit: contain;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+    transform: scale(0.96);
+    transition: transform 300ms cubic-bezier(.2,.8,.2,1);
+  }
+  .lightbox.open img { transform: scale(1); }
+  .lightbox-close {
+    position: fixed; top: 22px; right: 26px;
+    width: 44px; height: 44px; border: 0;
+    background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.95);
+    font-size: 28px; line-height: 1; font-weight: 300;
+    cursor: pointer; border-radius: 50%;
+    backdrop-filter: blur(8px);
+    transition: background 200ms ease;
+  }
+  .lightbox-close:hover { background: rgba(255,255,255,0.18); }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .cover-grid { grid-template-columns: 1fr; min-height: auto; }
+    .cover-image { height: 50vh; }
+    .two-col, .two-col.media-first, .two-col.balanced { grid-template-columns: 1fr; gap: 32px; }
+    .photo-grid.three, .photo-grid.four { grid-template-columns: 1fr 1fr; }
+    .photo-grid.asymm { grid-template-columns: 1fr; }
+    .photo-grid.asymm > :nth-child(1) { grid-row: auto; }
+    .walk { grid-template-columns: 1fr; gap: 28px; }
+    .option-header { grid-template-columns: auto 1fr; }
+    .avail-table th, .avail-table td { padding: 10px 12px; }
+  }
+  @media (max-width: 600px) {
+    .photo-grid.two, .photo-grid.three, .photo-grid.four { grid-template-columns: 1fr; }
+    section { padding: 56px 20px; }
+    .topbar-inner { padding: 14px 20px; }
+    .stat-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media print {
+    .topbar { display: none; }
+    section { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     TOP BAR
+════════════════════════════════════════════════════════════ -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-brand">
+      <span class="cocoon">
+        <img src="img/cocoon/mark-128.png" alt="Cocoon" class="logomark" />
+        <img src="img/cocoon/wordmark-320.png" alt="cocoon" class="wordmark" />
+      </span>
+      <span class="divider" aria-hidden="true"></span>
+      <span class="partner">Zara Home · Venue Options</span>
+    </div>
+    <div class="topbar-meta">Fall 2026 press &amp; influencer event</div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════
+     COVER
+════════════════════════════════════════════════════════════ -->
+<section class="cover full">
+  <div class="cover-grid">
+    <div class="cover-text">
+      <div>
+        <div class="superhead">Venue options · Manhattan</div>
+        <h1 class="title" style="margin-top:18px;">Zara Home<br/>fall activation.<br/><span style="color:var(--terracotta)">Four&nbsp;venues.</span></h1>
+        <p class="lede" style="margin-top:32px; max-width: 480px;">Four Manhattan spaces for your fall collection press &amp; influencer showcase — each a different architectural character, same Cocoon guarantee of a cleared, camera-ready room.</p>
+        <a href="#note" class="cta-pill terracotta" style="margin-top: 28px;">Start reading ↓</a>
+      </div>
+      <div class="cover-meta">
+        <div><strong>Event</strong> &nbsp;Zara Home fall collection press &amp; influencer showcase</div>
+        <div><strong>Format</strong> &nbsp;Passed bites &amp; beverages · 4–6 hours</div>
+        <div><strong>Guests</strong> &nbsp;60–80 incl. staff &amp; crew</div>
+        <div><strong>Date windows</strong> &nbsp;July 27–31 · Sept 1–4 · Sept 8–9 · Sept 14–18</div>
+        <div><strong>Duration</strong> &nbsp;2–2.5 consecutive days per window</div>
+        <div><strong>Budget</strong> &nbsp;Venue at or below $50–60K total</div>
+        <div><strong>Prepared for</strong> &nbsp;Kris Nash · WPP Production</div>
+        <div><strong>Prepared by</strong> &nbsp;Eduard Monteagudo · Cocoon Flex Spaces</div>
+      </div>
+    </div>
+    <div class="cover-image">
+      <img src="img/casa-luz/04.jpg" alt="Casa Luz — SoHo loft with cast-iron columns and arched windows"
+           onerror="this.onerror=null;this.src='img/casa-ezra/hero.jpg';" />
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NOTE FROM EDUARD
+════════════════════════════════════════════════════════════ -->
+<section id="note">
+  <div class="two-col">
+    <div>
+      <div class="superhead">A note from Cocoon</div>
+      <h2 class="headline" style="margin-top:14px;">Kris — here are four Manhattan venues worth a walkthrough for the Zara Home fall activation.</h2>
+    </div>
+    <div>
+      <div class="note body">
+        <p>You've asked for spaces that can hold 60–80 people, be fully cleared of furniture and art, and give the Zara Home fall collection room to breathe for 2–3 consecutive days of press and influencer activity. We've pulled the four strongest options in our Manhattan portfolio that fit that brief.</p>
+        <p>Each space below comes with an availability read against your four date windows. Two are confirmed open across all windows. One is available through early September only. One is still being held while we confirm — we're including it because it fits the brief and you should have it on your radar.</p>
+        <p>Catering, photography, and production options follow in a separate round once you've landed on a space. For now — pick your architectural direction.</p>
+        <div class="signature">— Eduard, Cocoon Flex Spaces</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     EVENT BRIEF
+════════════════════════════════════════════════════════════ -->
+<section class="full">
+  <div class="inner">
+    <div class="superhead">The brief</div>
+    <h2 class="title" style="font-size: clamp(36px, 5vw, 64px); max-width: 980px; margin-top: 18px;">A press &amp; influencer event built to showcase the Zara Home fall collection — clear walls, natural light, and a room the edit team will want to photograph.</h2>
+  </div>
+  <div class="inner" style="margin-top: 48px;">
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="num">60–80</div>
+        <div class="label">Guests incl.<br/>staff &amp; crew</div>
+      </div>
+      <div class="stat">
+        <div class="num">4–6h</div>
+        <div class="label">Live event<br/>per day</div>
+      </div>
+      <div class="stat">
+        <div class="num">2–3</div>
+        <div class="label">Consecutive days<br/>per window</div>
+      </div>
+      <div class="stat">
+        <div class="num">4</div>
+        <div class="label">Venue<br/>options</div>
+      </div>
+    </div>
+  </div>
+  <div class="inner" style="margin-top: 56px;">
+    <div class="two-col">
+      <div>
+        <div class="caption" style="margin-bottom: 12px;">What guests are doing</div>
+        <p class="body">Arriving by invite. Moving through the collection at their own pace — touching, photographing, talking to the Zara Home team. Picking up a specialty cocktail or a passed bite. Generating content for their channels and editorial coverage for the press.</p>
+      </div>
+      <div>
+        <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">What the space needs to do</div>
+        <p class="body">Be fully cleared before load-in so the collection owns the room. Have strong natural light for photography. Flow well for a cocktail-style reception — no bottlenecks, no awkward corridors. Photograph clean and editorial on phones and pro cameras alike. Signal "elevated home" without competing with the product.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VENUE CALLOUT
+════════════════════════════════════════════════════════════ -->
+<section class="callout">
+  <div class="inner">
+    <div class="superhead" style="color: rgba(255,255,255,0.92);">The venues · Manhattan</div>
+    <h2 class="title" style="margin-top:18px; max-width: 1100px; font-size: clamp(34px, 5vw, 64px);">Upper West Side townhouse.<br/>SoHo cast-iron loft.<br/>Lower East Side brownstone.<br/>Nolita collector's apartment.<br/>Sutton Place luxury penthouse.</h2>
+    <p class="lede" style="margin-top: 28px; max-width: 800px;">Four architectural personalities. Same cleared-floor setup for your collection. Different neighborhood energies — pick the one that matches your editorial vision.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VENUE 1 — CASA EZRA
+════════════════════════════════════════════════════════════ -->
+<section id="ezra" data-lightbox>
+  <div class="option-header">
+    <div class="option-num">1</div>
+    <div>
+      <div class="option-tag">Option 1 · Casa Ezra · Upper West Side · Historic townhouse · <span style="color:var(--teal);">Available — all windows ✓</span></div>
+      <h3 class="option-title">An Upper West Side townhouse.<br/>Open kitchen, wisteria pergola, and four floors of light-filled residential character.</h3>
+    </div>
+  </div>
+
+  <div class="photo-grid quad" style="margin-top: 40px;">
+    <div class="photo">
+      <img src="img/casa-ezra/backyard.jpg" alt="Casa Ezra — wisteria pergola backyard"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>Backyard</div><div class=\'ph-text\'>Wisteria pergola · save as img/casa-ezra/backyard.jpg</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/casa-ezra/living-room.jpg" alt="Casa Ezra — living room with steel staircase"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>Living Room</div><div class=\'ph-text\'>Save as img/casa-ezra/living-room.jpg</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/casa-ezra/kitchen.jpg" alt="Casa Ezra — open kitchen with marble island"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>Kitchen</div><div class=\'ph-text\'>Save as img/casa-ezra/kitchen.jpg</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/casa-ezra/art-vignette.jpg" alt="Casa Ezra — interior art vignette"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>Interior Detail</div><div class=\'ph-text\'>Save as img/casa-ezra/art-vignette.jpg</div></div>'" />
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 56px;">
+    <div>
+      <div class="caption" style="margin-bottom: 12px;">Why it works for Zara Home</div>
+      <p class="body">Casa Ezra's residential character — warm materials, open plan, good natural light throughout — makes it one of the most natural fits for a home goods collection. The open kitchen with marble island becomes your reception counter. The wisteria pergola backyard gives a layered outdoor moment for photographers. The steel staircase reads architectural and editorial without trying too hard.</p>
+      <p class="body" style="margin-top: 14px;">Three primary floors clear to open, walkable space. Easy to dress the rooms with the Zara Home fall pieces and photograph the collection in context without fighting the architecture.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· Open kitchen with marble island — natural bar and pass-through</li>
+        <li>· Wisteria pergola backyard — outdoor photo moment</li>
+        <li>· Light-filled living rooms on multiple levels</li>
+        <li>· Steel staircase — architectural content shot</li>
+        <li>· Theater room available for product demo / VIP moment</li>
+        <li>· Upper West Side · easy guest access</li>
+        <li>· Furniture &amp; art fully cleared on request</li>
+      </ul>
+      <div style="margin-top: 28px; padding: 18px 20px; background: rgba(39,84,83,0.08); border-left: 3px solid var(--teal);">
+        <div class="caption" style="color: var(--teal); margin-bottom: 6px;">Availability</div>
+        <div style="font-size: 14px; font-weight: 600; color: var(--teal);">Open across all four date windows</div>
+        <div style="font-size: 13px; color: var(--ink-soft); margin-top: 4px;">July 27–31 · Sept 1–4 · Sept 8–9 · Sept 14–18</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VENUE 2 — CASA LUZ
+════════════════════════════════════════════════════════════ -->
+<section id="luz" data-lightbox>
+  <div class="option-header">
+    <div class="option-num">2</div>
+    <div>
+      <div class="option-tag">Option 2 · Casa Luz · SoHo · Two-floor cast-iron loft · <span style="color:var(--terracotta-deep);">Available July + early Sept only</span></div>
+      <h3 class="option-title">A classic SoHo loft on Howard Street.<br/>15-foot ceilings, cast-iron columns, exposed brick, and oversized windows — two full floors.</h3>
+    </div>
+  </div>
+
+  <div class="photo-grid editorial" style="margin-top: 40px;">
+    <div class="photo">
+      <img src="img/casa-luz/04.jpg" alt="Casa Luz — principal loft floor with cast-iron columns and arched windows"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>The Loft Floor</div><div class=\'ph-text\'>Principal entertaining level · save as img/casa-luz/04.jpg</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/casa-luz/01.jpg" alt="Casa Luz — chandelier salon with Corinthian cast-iron columns"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>Chandelier Salon</div><div class=\'ph-text\'>Save as img/casa-luz/01.jpg</div></div>'" />
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">The most architecturally dramatic space in the set — a two-floor SoHo loft on Howard Street with 15-foot ceilings, original cast-iron Corinthian columns, exposed brick, polished hardwood floors, and oversized arched windows on multiple exposures. The lower floor is approximately 3,500 sq ft of fully open column-framed space; the upper floor is a matched second level that books with it.</p>
+      <p class="body" style="margin-top: 14px;">For a collection showcase, this space does the heavy lifting photographically before a single piece of furniture is placed. The column rhythm creates natural vignette zones. The multiple window exposures mean good light at almost any time of day. The cast-iron facade on Howard Street is the most recognizable fashion-event arrival in the city.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· ~3,500 sf open lower floor — the main showcase level</li>
+        <li>· Upper floor books together — cocktails &amp; secondary vignettes</li>
+        <li>· 15-ft ceilings with original cast-iron columns</li>
+        <li>· Arched windows on multiple exposures · strong natural light</li>
+        <li>· Exposed brick + polished hardwood — editorial neutral</li>
+        <li>· Passenger elevator — accessible entry</li>
+        <li>· SoHo · Howard Street · iconic arrival moment</li>
+      </ul>
+      <div style="margin-top: 28px; padding: 18px 20px; background: rgba(245,64,41,0.07); border-left: 3px solid var(--terracotta);">
+        <div class="caption" style="color: var(--terracotta); margin-bottom: 6px;">Availability</div>
+        <div style="font-size: 14px; font-weight: 600; color: var(--terracotta-deep);">July 27–31 · Sept 1–4 · confirmed open</div>
+        <div style="font-size: 13px; color: var(--ink-soft); margin-top: 4px;">Not available Sept 8–9 or Sept 14–18</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 56px;">
+    <div class="divider-label">
+      <div class="text">Across the loft</div>
+      <div class="line"></div>
+      <div class="text">SoHo · Howard Street · Two floors</div>
+    </div>
+    <div class="photo-grid four">
+      <div class="photo">
+        <img src="img/casa-luz/07.jpg" alt="Casa Luz — arched window lounge"
+             onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>Lounge</div></div>'" />
+      </div>
+      <div class="photo">
+        <img src="img/casa-luz/06.jpg" alt="Casa Luz — salon opening to loft floor"
+             onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>Salon</div></div>'" />
+      </div>
+      <div class="photo">
+        <img src="img/casa-luz/03.jpg" alt="Casa Luz — white-brick salon corner"
+             onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>White-brick salon</div></div>'" />
+      </div>
+      <div class="photo">
+        <img src="img/casa-luz/02.jpg" alt="Casa Luz — cast-iron facade from the street"
+             onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>Facade · Howard St</div></div>'" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VENUE 3 — CASA DUENDE
+════════════════════════════════════════════════════════════ -->
+<section id="duende" data-lightbox>
+  <div class="option-header">
+    <div class="option-num">3</div>
+    <div>
+      <div class="option-tag">Option 3 · Casa Duende · Lower East Side · Multi-level townhouse · <span style="color:var(--ink-mute);">Availability TBD — hold pending</span></div>
+      <h3 class="option-title">A multi-level townhouse on Eldridge Street.<br/>Cellar through rooftop terrace — five distinct levels, period bones, Manhattan character.</h3>
+    </div>
+  </div>
+
+  <!-- hero photo pair -->
+  <div class="photo-grid editorial" style="margin-top: 40px;">
+    <div class="photo">
+      <img src="img/casa-duende/01.jpg" alt="Casa Duende — second floor living room"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>01</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/casa-duende/04.jpg" alt="Casa Duende — rooftop terrace"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>04</div></div>'" />
+    </div>
+  </div>
+  <!-- secondary gallery -->
+  <div class="photo-grid four" style="margin-top: 8px;">
+    <div class="photo">
+      <img src="img/casa-duende/02.jpg" alt="Casa Duende — living room natural light"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>02</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/casa-duende/03.jpg" alt="Casa Duende — waterfall wall"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>03</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/casa-duende/05.jpg" alt="Casa Duende — lounge area"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>05</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/casa-duende/06.jpg" alt="Casa Duende — rooftop bar area"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>06</div></div>'" />
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">Casa Duende is a multi-level Manhattan townhouse with genuine period character — five levels from cellar to open rooftop terrace, each a distinct room with its own feel. The collection gets spread across levels, creating a natural flow that keeps guests moving and discovering rather than pooling in one room.</p>
+      <p class="body" style="margin-top: 14px;">For a press event, the vertical format works well: a dedicated arrival and reception level, a primary showcase floor, secondary rooms for VIP / press moments, and the rooftop terrace as the close-of-night outdoor moment. We're still confirming availability — this one is worth the waitlist.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· Five levels — cellar, first floor, second floor, third floor, rooftop terrace</li>
+        <li>· Open rooftop terrace — outdoor close-of-day moment</li>
+        <li>· Period bones with contemporary finish</li>
+        <li>· Natural vertical guest flow — discovery format</li>
+        <li>· Lower Manhattan · LES · strong neighborhood character</li>
+        <li>· Furniture &amp; art fully cleared on request</li>
+      </ul>
+      <div style="margin-top: 28px; padding: 18px 20px; background: rgba(39,84,83,0.06); border-left: 3px solid var(--teal);">
+        <div class="caption" style="color: var(--teal); margin-bottom: 6px;">Availability</div>
+        <div style="font-size: 14px; font-weight: 600; color: var(--ink);">Sept 8–9 · Sept 14–18 · confirmed open</div>
+        <div style="font-size: 13px; color: var(--ink-soft); margin-top: 4px;">July 27–30 works (31st blocked) · Sept 1–4 unavailable</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 56px;">
+    <div class="divider-label">
+      <div class="text">The five levels</div>
+      <div class="line"></div>
+      <div class="text">Casa Duende · Lower East Side</div>
+    </div>
+    <div class="photo-grid four">
+      <div class="photo" style="background: #fff;">
+        <img src="img/casa-duende/floor-plan-1-cellar.png" alt="Casa Duende — Cellar" style="object-fit: contain; padding: 12px;" />
+        <div style="padding: 8px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-mute); font-weight: 600; background: var(--cream-warm);">Cellar</div>
+      </div>
+      <div class="photo" style="background: #fff;">
+        <img src="img/casa-duende/floor-plan-2-first-floor.png" alt="Casa Duende — First Floor" style="object-fit: contain; padding: 12px;" />
+        <div style="padding: 8px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-mute); font-weight: 600; background: var(--cream-warm);">First Floor</div>
+      </div>
+      <div class="photo" style="background: #fff;">
+        <img src="img/casa-duende/floor-plan-3-second-floor.png" alt="Casa Duende — Second Floor" style="object-fit: contain; padding: 12px;" />
+        <div style="padding: 8px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-mute); font-weight: 600; background: var(--cream-warm);">Second Floor</div>
+      </div>
+      <div class="photo" style="background: #fff;">
+        <img src="img/casa-duende/floor-plan-5-terrace.png" alt="Casa Duende — Rooftop Terrace" style="object-fit: contain; padding: 12px;" />
+        <div style="padding: 8px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-mute); font-weight: 600; background: var(--cream-warm);">Rooftop Terrace</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VENUE 4 — SUTTON TOWER PH77
+════════════════════════════════════════════════════════════ -->
+<section id="sutton" data-lightbox>
+  <div class="option-header">
+    <div class="option-num">4</div>
+    <div>
+      <div class="option-tag">Option 4 · Sutton Tower PH77 · Sutton Place, Midtown East · 77th-floor penthouse · <span style="color:var(--ink-mute);">Availability TBD</span></div>
+      <h3 class="option-title">A 77th-floor penthouse at Sutton Tower.<br/>4,595 sq ft with direct elevator entry, corner great room, and views of the East River, Midtown, and Central Park.</h3>
+    </div>
+  </div>
+
+  <!-- hero photo + gallery -->
+  <div class="photo-grid editorial" style="margin-top: 40px;">
+    <div class="photo">
+      <img src="img/sutton-tower/01.webp" alt="Sutton Tower PH77 — great room"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>01</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/sutton-tower/02.webp" alt="Sutton Tower PH77 — views"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>02</div></div>'" />
+    </div>
+  </div>
+  <div class="photo-grid four" style="margin-top: 8px;">
+    <div class="photo">
+      <img src="img/sutton-tower/03.webp" alt="Sutton Tower PH77 — dining"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>03</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/sutton-tower/04.webp" alt="Sutton Tower PH77 — gallery entry"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>04</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/sutton-tower/05.webp" alt="Sutton Tower PH77 — kitchen"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>05</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/sutton-tower/06.webp" alt="Sutton Tower PH77 — bedroom views"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>06</div></div>'" />
+    </div>
+  </div>
+
+  <!-- floor plan -->
+  <div class="floor-plan-frame" style="margin-top: 40px;">
+    <img src="img/sutton-tower/floor-plan-main-level.png" alt="Sutton Tower PH77 — floor plan"
+         onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>PH77 Floor Plan</div><div class=\'ph-text\'>Save as img/sutton-tower/floor-plan-main-level.png</div></div>'" />
+    <div class="floor-plan-caption">Penthouse 77 · Sutton Tower · 430 East 58th Street · Interior 4,595 sf | Exterior 170 sf</div>
+  </div>
+
+  <div class="two-col" style="margin-top: 56px;">
+    <div>
+      <p class="body">Sutton Tower PH77 is a different register from the rest of the set: not a townhouse or a loft, but a brand-new full-floor luxury penthouse on the 77th floor at 430 East 58th Street. The scale is residential but the views — East River, Long Island Sound, New York Harbor, Midtown skyline, and Central Park — are unmatched in the portfolio.</p>
+      <p class="body" style="margin-top: 14px;">The floor plan reads as a natural showcase circuit: the 33'9" × 17'11" corner great room with gas fireplace anchors the main collection display, the 18'3" × 15'3" corner dining room as a second showcase zone, and the 33-foot entrance gallery as the arrival and first impression. The direct elevator entry means guests step into the space rather than lobby-ing up.</p>
+      <p class="body" style="margin-top: 14px;">For an elevated home goods collection — furniture, textiles, objects — a 77th-floor skyline backdrop is a meaningful editorial upgrade over a street-level space. It's a different ask logistically (loading, security, building coordination) but the result is unique in the market.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· 4,595 sf interior — the largest space in the set</li>
+        <li>· 77th floor — East River, Midtown, Central Park, Harbor views</li>
+        <li>· Corner great room 33'9" × 17'11" with gas fireplace</li>
+        <li>· Corner dining room 18'3" × 15'3" — secondary showcase zone</li>
+        <li>· 33-foot entrance gallery — dramatic arrival</li>
+        <li>· Direct private elevator entry — seamless guest flow</li>
+        <li>· Fully accessible — elevator, no stairs required</li>
+        <li>· Windowed kitchen with double ovens &amp; full-height wine storage</li>
+        <li>· Service elevator for load-in &amp; catering</li>
+      </ul>
+      <div style="margin-top: 28px; padding: 18px 20px; background: rgba(26,26,26,0.04); border-left: 3px dashed var(--rule);">
+        <div class="caption" style="color: var(--ink-mute); margin-bottom: 6px;">Availability</div>
+        <div style="font-size: 14px; font-weight: 600; color: var(--ink-soft);">Hold pending confirmation</div>
+        <div style="font-size: 13px; color: var(--ink-soft); margin-top: 4px;">All windows under review — pricing shared on confirmation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VENUE 5 — CASA YUGEN
+════════════════════════════════════════════════════════════ -->
+<section id="yugen" data-lightbox>
+  <div class="option-header">
+    <div class="option-num">5</div>
+    <div>
+      <div class="option-tag">Option 5 · Casa Yugen · Nolita · 4F residential loft · <span style="color:var(--ink-mute);">Availability TBD</span></div>
+      <h3 class="option-title">A curated collector's apartment in the heart of Nolita.<br/>4,158 sq ft with floor-to-ceiling corner windows, an art collection on the walls, and open-plan living from entry to kitchen.</h3>
+    </div>
+  </div>
+
+  <!-- hero photo pair -->
+  <div class="photo-grid editorial" style="margin-top: 40px;">
+    <div class="photo">
+      <img src="img/casa-yugen/01.jpg" alt="Casa Yugen — living room"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>Living Room</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/casa-yugen/02.jpg" alt="Casa Yugen — dining and kitchen"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>Dining & Kitchen</div></div>'" />
+    </div>
+  </div>
+  <!-- gallery -->
+  <div class="photo-grid four" style="margin-top: 8px;">
+    <div class="photo">
+      <img src="img/casa-yugen/03.jpg" alt="Casa Yugen — corner windows"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>03</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/casa-yugen/04.jpg" alt="Casa Yugen — detail"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>04</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/casa-yugen/05.jpg" alt="Casa Yugen — bedroom"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>05</div></div>'" />
+    </div>
+    <div class="photo">
+      <img src="img/casa-yugen/06.jpg" alt="Casa Yugen — bathroom"
+           onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'placeholder-frame\'><div class=\'ph-label\'>06</div></div>'" />
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">Casa Yugen is a full-floor collector's apartment on the 4th floor in Nolita — 4,158 sq ft designed around natural light, natural materials, and a curated art collection that lives permanently on the walls. Corner floor-to-ceiling windows flood the main living space with light on two axes. The open kitchen with island anchors one end; the living room opens to a small outdoor balcony on the other.</p>
+      <p class="body" style="margin-top: 14px;">For a Zara Home activation, this space offers something the others don't: an already-styled residential environment with artwork and designer furniture in place. The collection slots in naturally rather than being installed into an empty shell. The intimate Nolita location — steps from Spring Street and the SoHo border — gives guests a strong neighborhood context for a press or influencer evening.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· 4,158 sf — residential open plan, full 4th floor</li>
+        <li>· Corner floor-to-ceiling windows — exceptional natural light</li>
+        <li>· Permanent art collection — editorial backdrop built in</li>
+        <li>· Designer furniture — curated residential aesthetic</li>
+        <li>· Open kitchen with island — ideal passed-bites setup</li>
+        <li>· Fireplace + balcony — warmth and outdoor moment</li>
+        <li>· Passenger elevator — accessible entry</li>
+        <li>· Nolita · walkable from SoHo, NoLIta core</li>
+      </ul>
+      <div style="margin-top: 28px; padding: 18px 20px; background: rgba(26,26,26,0.04); border-left: 3px dashed var(--rule);">
+        <div class="caption" style="color: var(--ink-mute); margin-bottom: 6px;">Availability</div>
+        <div style="font-size: 14px; font-weight: 600; color: var(--ink-soft);">Confirming all windows</div>
+        <div style="font-size: 13px; color: var(--ink-soft); margin-top: 4px;">Selected bookings accepted — update pending</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MORE OPTIONS COMING
+════════════════════════════════════════════════════════════ -->
+<section style="background: var(--cream-warm); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);">
+  <div style="max-width: var(--max); margin: 0 auto; padding: clamp(48px,6vw,80px) clamp(24px,5vw,80px); display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 260px;">
+      <div class="superhead">More options</div>
+      <h3 style="font-size: clamp(22px,2.8vw,32px); font-weight: 700; margin: 14px 0 0; line-height: 1.25; letter-spacing: -0.02em;">Additional venues being confirmed now.</h3>
+    </div>
+    <div style="flex: 2; min-width: 280px;">
+      <p class="body" style="margin: 0; max-width: 600px;">We're actively reviewing a second shortlist to round out the set — spaces across Brooklyn and further Manhattan neighborhoods that match the Zara Home brief. Expect an update within a few days with 2–3 additional options at comparable scale and price.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     AVAILABILITY AT-A-GLANCE
+════════════════════════════════════════════════════════════ -->
+<section style="background: var(--cream-deep); max-width: none; border-top: 1px solid var(--rule);">
+  <div style="max-width: var(--max); margin: 0 auto; padding: 0 clamp(24px, 5vw, 80px);">
+    <div class="superhead">Availability at-a-glance</div>
+    <h2 class="headline" style="margin-top: 14px; max-width: 760px;">Three confirmed open, two pending — your September windows are the most flexible.</h2>
+
+    <table class="avail-table">
+      <thead>
+        <tr>
+          <th>Venue</th>
+          <th>July 27–31</th>
+          <th>Sept 1–4</th>
+          <th>Sept 8–9</th>
+          <th>Sept 14–18</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="venue-col">Casa Ezra<span>Upper West Side · Townhouse</span></td>
+          <td><span class="badge yes">Open</span></td>
+          <td><span class="badge yes">Open</span></td>
+          <td><span class="badge yes">Open</span></td>
+          <td><span class="badge yes">Open</span></td>
+        </tr>
+        <tr>
+          <td class="venue-col">Casa Luz<span>SoHo · Cast-iron loft</span></td>
+          <td><span class="badge yes">Open</span></td>
+          <td><span class="badge yes">Open</span></td>
+          <td><span class="badge no">Unavailable</span></td>
+          <td><span class="badge no">Unavailable</span></td>
+        </tr>
+        <tr>
+          <td class="venue-col">Casa Duende<span>Lower East Side · Townhouse</span></td>
+          <td><span class="badge partial">27–30 only</span></td>
+          <td><span class="badge no">Unavailable</span></td>
+          <td><span class="badge yes">Open</span></td>
+          <td><span class="badge yes">Open</span></td>
+        </tr>
+        <tr>
+          <td class="venue-col">Casa Yugen<span>Nolita · Residential loft</span></td>
+          <td><span class="badge tbd">TBD</span></td>
+          <td><span class="badge tbd">TBD</span></td>
+          <td><span class="badge tbd">TBD</span></td>
+          <td><span class="badge tbd">TBD</span></td>
+        </tr>
+        <tr>
+          <td class="venue-col">Sutton Tower PH77<span>Midtown East · Penthouse</span></td>
+          <td><span class="badge tbd">TBD</span></td>
+          <td><span class="badge tbd">TBD</span></td>
+          <td><span class="badge tbd">TBD</span></td>
+          <td><span class="badge tbd">TBD</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 24px;">Availability current as of proposal date. We're targeting 2–3 consecutive days in each window. Per-day rates and total-hold pricing shared once you've identified a preferred direction and window.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NEXT STEPS
+════════════════════════════════════════════════════════════ -->
+<section class="callout ink">
+  <div class="inner">
+    <div class="superhead" style="color: rgba(255,255,255,0.7);">Next steps</div>
+    <h2 class="title" style="margin-top:18px; font-size: clamp(32px, 4.5vw, 60px); max-width: 900px;">Three steps to the<br/>full activation package.</h2>
+    <div class="walk" style="margin-top: 48px;">
+      <div class="step">
+        <div class="step-num">Step 01</div>
+        <h4 style="color:#fff; font-size: 20px; margin: 0 0 10px;">Share your venue feedback</h4>
+        <p style="font-size: 15px; color: rgba(255,255,255,0.75); margin: 0; line-height: 1.6;">Tell us which directions resonate — or flag anything that doesn't. You can shortlist one, rank two or three, or flag a preference on feel. No commitment yet — we just want to understand what's landing before we move forward.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">Step 02</div>
+        <h4 style="color:#fff; font-size: 20px; margin: 0 0 10px;">Pricing &amp; date lock</h4>
+        <p style="font-size: 15px; color: rgba(255,255,255,0.75); margin: 0; line-height: 1.6;">Once we hear back, we'll send full venue pricing for your preferred option(s), confirm 2–3 consecutive days in your target window, and place the hold.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">Step 03</div>
+        <h4 style="color:#fff; font-size: 20px; margin: 0 0 10px;">Catering &amp; production round</h4>
+        <p style="font-size: 15px; color: rgba(255,255,255,0.75); margin: 0; line-height: 1.6;">With venue and dates confirmed, we'll send catering directions, photography options, and production / lighting recommendations to complete the full activation package.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="inner">
+    <div>
+      <div class="sig">Eduard Monteagudo</div>
+      <div class="meta" style="margin-top: 4px;">
+        Cocoon Flex Spaces · <a href="mailto:eduard@cocoonflexspaces.com">eduard@cocoonflexspaces.com</a><br/>
+        <a href="https://cocoonflexspaces.com" target="_blank">cocoonflexspaces.com</a>
+      </div>
+    </div>
+    <div style="text-align: right;">
+      <div class="meta">
+        Prepared for Kris Nash · WPP Production<br/>
+        Zara Home fall collection · venue options<br/>
+        June 2026
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════════
+     LIGHTBOX
+════════════════════════════════════════════════════════════ -->
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox-close" id="lb-close" aria-label="Close">×</button>
+  <img id="lb-img" src="" alt="" />
+</div>
+
+<script>
+(function(){
+  const lb = document.getElementById('lb');
+  const lbImg = document.getElementById('lb-img');
+  const lbClose = document.getElementById('lb-close');
+
+  document.querySelectorAll('[data-lightbox] .photo').forEach(function(card){
+    card.addEventListener('click', function(){
+      const img = card.querySelector('img');
+      if(!img || !img.src || img.src === window.location.href) return;
+      lbImg.src = img.src;
+      lbImg.alt = img.alt || '';
+      lb.classList.add('open');
+      lb.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      requestAnimationFrame(function(){ lb.style.opacity = '1'; });
+    });
+  });
+
+  function closeLb(){
+    lb.classList.remove('open');
+    lb.style.opacity = '0';
+    setTimeout(function(){ lb.style.display = 'none'; lbImg.src = ''; }, 260);
+    document.body.style.overflow = '';
+  }
+
+  lbClose.addEventListener('click', closeLb);
+  lb.addEventListener('click', function(e){ if(e.target === lb) closeLb(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLb(); });
+})();
+</script>
+
+</body>
+</html>
